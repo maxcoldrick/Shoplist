@@ -1,4 +1,4 @@
-# Shoplist
+# shoplist
 
 An API for a shopping list database that runs on the local network.
 
