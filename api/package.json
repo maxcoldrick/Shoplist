@@ -1,0 +1,15 @@
+{
+  "name": "sqlAPI",
+  "version": "1.0.0",
+  "description": "http to sql REST listener",
+  "author": "Max Coldrick",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  }
+}
