@@ -10,7 +10,7 @@ So, we create a Docker network and associate the two containers.
 
 The API listens on port 8080, but Docker routes 8080 to port 49160 - this means we can cURL that port to get to the express routes.
 
-We've chosen to use Docker for this so that we can easily deploy the network to a Raspberry Pi on the local network.
+We've chosen to use Docker for this so that we can easily deploy the Docker network to a Raspberry Pi on the local network.
 
 
 
