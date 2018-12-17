@@ -15,10 +15,10 @@ docker build -t sql-serv sql/
 docker run --name mysql1 --net sqlbridge -p 3306 -d sql-serv
 
 # Give the SQL server time to warm up
-echo "sleeping for 10"
-sleep 5
+echo "Waiting for SQL DB...."
+sleep 20
 
 # Start the API--ip 172.18.0.22 172.32.0.3
 docker run -p 49160:8080 --ip 172.32.0.15 --net sqlbridge -d sqlapi
 
-curl http://172.32.0.15:49160/twentyeighteen
+curl http://localhost:49160/twentyeighteen
