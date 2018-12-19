@@ -19,7 +19,7 @@ var db = mysql.createConnection({
 
 // Connect to database
 db.connect(function(err) {
-  if (err) throw err;
+  if (err) db.connect(function(err);
   console.log("\nConnected to movies database")
 });
 
