@@ -18,8 +18,8 @@ var db = mysql.createConnection({
 });
 
 // Connect to database
-db.connect(function(err) {
-  if (err) db.connect(function(err);
+var db_status = db.connect(function(err) {
+  if (err) db_status;
   console.log("\nConnected to movies database")
 });
 

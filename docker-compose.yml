@@ -12,8 +12,7 @@ services:
         - ./sql/init:/docker-entrypoint-init.d
     api:
       build: ./api
-      command: npm install
       depends_on:
         - database
       ports:
-        - "49160:8080"  
+        - "49160:8080"
