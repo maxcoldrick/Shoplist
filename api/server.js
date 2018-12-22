@@ -1,7 +1,6 @@
 'use strict';
 
 const PORT = 8080;
-const HOST = '172.32.0.15';
 const express = require('express');
 const app = express();
 const mysql = require('mysql');
@@ -11,7 +10,7 @@ const mysql = require('mysql');
 
 // Create database connection with creds
 var db = mysql.createConnection({
-    host: "mysql1",
+    host: "mysql",
     user: "api",
     password: "password",
     database: "movies"
@@ -19,7 +18,7 @@ var db = mysql.createConnection({
 
 // Connect to database
 var db_status = db.connect(function(err) {
-  if (err) db_status;
+  if (err) throw error;
   console.log("\nConnected to movies database")
 });
 

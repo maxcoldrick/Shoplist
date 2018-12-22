@@ -1,6 +1,6 @@
-CREATE USER 'api'@'172.32.0.15' IDENTIFIED WITH mysql_native_password BY 'password';
+CREATE DATABASE IF NOT EXISTS movies;
 
-GRANT ALL PRIVILEGES ON movies.* TO 'api'@'172.32.0.15';
+USE movies;
 
 CREATE TABLE IF NOT EXISTS twentyeighteen (
     movie_id INT AUTO_INCREMENT,
@@ -19,3 +19,8 @@ VALUES ('Aquaman');
 
 INSERT INTO twentyseventeen (title)
 VALUES ('Batman League');
+
+FLUSH PRIVILEGES;
+CREATE USER 'api'@'172.32.0.15' IDENTIFIED WITH mysql_native_password BY 'password';
+
+GRANT ALL PRIVILEGES ON movies.* TO 'api'@'172.32.0.15';
