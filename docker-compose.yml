@@ -16,8 +16,6 @@ services:
           ipv4_address: 172.32.0.3
     api:
       build: ./api
-      depends_on:
-        - database
       ports:
         - "49160:8080"
       networks:

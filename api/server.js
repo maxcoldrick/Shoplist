@@ -10,7 +10,7 @@ const mysql = require('mysql');
 
 // Create database connection with creds
 var db = mysql.createConnection({
-    host: "mysql",
+    host: "shoplist_database_1",
     user: "api",
     password: "password",
     database: "movies"
