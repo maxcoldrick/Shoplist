@@ -22,3 +22,5 @@ sleep 20
 docker run -p 49160:8080 --ip 172.32.0.15 --net sqlbridge -d sqlapi
 
 curl http://localhost:49160/twentyeighteen
+
+echo "done"
